@@ -15,10 +15,10 @@ ActivateSlideshows
 </ol>
 <h3>Display in the frontend</h3>
 <ol>
-	<li>In you Joomla! backend, go in Extensions / Module Manager.</li>
-	<li>Create a new instance of the 'Activate Slideshows' module.</li>
+	<li>In you Joomla! backend, go in Extensions / <strong>Module Manager</strong>.</li>
+	<li>Create a <strong>new</strong> instance of the '<strong>Activate Slideshows</strong>' module.</li>
 </ol>
-<p>There are different layouts for the frontend module:</p>
+<p>There are different <strong>layouts</strong> for the frontend module:</p>
 <ul>
 	<li><strong>Simple Bootstrap 3 carousel</strong> - with following features: linkable slide, slide effect, auto start, auto cycle, time interval, pause on hover, enable caption, enable dots nav, enable arrows controls</li>
 	<li><strong>Bootstrap 3 carousel with thumbnails navigation</strong> - displays a bootstrap carousel with  captions, dots and arrows navigation plus a powerful navigation underneath with all the thumbnails (you can set a maximum number of thumbnails, if there are more, they will slide themselves).</li>
