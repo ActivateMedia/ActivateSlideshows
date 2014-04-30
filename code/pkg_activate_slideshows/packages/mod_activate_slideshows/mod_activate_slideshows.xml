@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Activate Slideshows</name>
+    <creationDate>April 2014</creationDate>
+    <version>1.0.0</version>
+    <description>This module works with the Activate Media Slideshows Component. It displays one or more slideshows.</description>
+    <copyright>Copyright (C) 2014. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <author>Activate Media</author>
+    <authorEmail>andrea@activatemedia.co.uk</authorEmail>
+    <authorUrl>http://activatemedia.co.uk</authorUrl>	
+    <files>
+        <filename>mod_activate_slideshows.xml</filename>
+        <filename module="mod_activate_slideshows">mod_activate_slideshows.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+		<filename>tmpl/default.php</filename>
+		<filename>tmpl/bootstrap-carousel-with-thumbs-navigation.php</filename>		
+        <filename>tmpl/more-slideshows.php</filename>
+		<filename>tmpl/simple-bootstrap-carousel.php</filename>
+        <filename>tmpl/slideshows-gallery.php</filename>
+        <filename>tmpl/showcase.php</filename>		
+        <filename>tmpl/index.html</filename>
+    </files>
+    
+    <media folder="media" destination="mod_activate_slideshows">
+        <folder>images</folder>
+        <folder>css</folder>
+        <folder>js</folder>
+    </media>
+        
+	<languages>
+		<language tag="en-GB">en-GB.mod_activate_slideshows.ini</language>
+		<language tag="en-GB">en-GB.mod_activate_slideshows.sys.ini</language>
+	</languages>        
+        
+    <config>
+<fields name="params">
+			<fieldset name="basic">
+                            <field 
+                                name="slideshow_ids"
+                                query="SELECT id,title FROM #__activate_slideshows_slideshows ORDER BY title ASC"
+                                type="sql"
+                                multiple="true"
+                                size="4"
+                                key_field="id"
+                                value_field="title"
+                                label="MOD_ACTIVATE_SLIDESHOWS_PARAMS_SLIDESHOWS_IDS_LABEL"
+                                require="true"
+                                description="MOD_ACTIVATE_SLIDESHOWS_PARAMS_SLIDESHOWS_IDS_DESC">
+                            </field>
+
+							<field
+								name="slide"
+								type="list"
+								default="slide"
+								label="MOD_ACTIVATE_SLIDESHOWS_PARAMS_SLIDE_LABEL"
+								description="MOD_ACTIVATE_SLIDESHOWS_PARAMS_SLIDE_DESC">
+									<option value="slide">JYES</option>
+									<option value="0">JNO</option>
+							</field>
+							<field
+								name="autostart"
+								type="list"
+								default="1"
+								label="MOD_ACTIVATE_SLIDESHOWS_PARAMS_AUTOSTART_LABEL"
+								description="MOD_ACTIVATE_SLIDESHOWS_PARAMS_AUTOSTART_DESC">
+									<option value="1">JYES</option>
+									<option value="0">JNO</option>
+							</field>
+							
+							<field
+								name="wrap"
+								type="list"
+								default="1"
+								label="MOD_ACTIVATE_SLIDESHOWS_PARAMS_WRAP_LABEL"
+								description="MOD_ACTIVATE_SLIDESHOWS_PARAMS_WRAP_DESC">
+									<option value="1">JENABLED</option>
+									<option value="0">JDISABLED</option>
+							</field>
+							
+							<field
+								name="interval"
+								type="integer"
+								default="5000"
+								label="MOD_ACTIVATE_SLIDESHOWS_PARAMS_INTERVAL_LABEL"
+								description="MOD_ACTIVATE_SLIDESHOWS_PARAMS_INTERVAL_DESC"
+								first="500"
+								last="10000"
+								step="500">
+							</field>
+							
+							<field
+								name="pause"
+								type="list"
+								default=""
+								label="MOD_ACTIVATE_SLIDESHOWS_PARAMS_PAUSE_LABEL"
+								description="MOD_ACTIVATE_SLIDESHOWS_PARAMS_PAUSE_DESC">
+									<option value="">MOD_ACTIVATE_SLIDESHOWS_PARAMS_PAUSE_OPTION_1</option>
+									<option value="hover">MOD_ACTIVATE_SLIDESHOWS_PARAMS_PAUSE_OPTION_2</option>
+							</field>
+							
+							<field
+								name="caption"
+								type="list"
+								default="1"
+								label="MOD_ACTIVATE_SLIDESHOWS_PARAMS_ENABLE_CAPTION_LABEL"
+								description="MOD_ACTIVATE_SLIDESHOWS_PARAMS_ENABLE_CAPTION_DESC">
+									<option value="1">JENABLED</option>
+									<option value="0">JDISABLED</option>
+							</field>
+							
+							<field
+								name="dots_navigation"
+								type="list"
+								default="1"
+								label="MOD_ACTIVATE_SLIDESHOWS_PARAMS_ENABLE_DOTS_NAVIGATION_LABEL"
+								description="MOD_ACTIVATE_SLIDESHOWS_PARAMS_ENABLE_DOTS_NAVIGATION_DESC">
+									<option value="1">JENABLED</option>
+									<option value="0">JDISABLED</option>
+							</field>	
+							
+							<field
+								name="arrows_navigation"
+								type="list"
+								default="1"
+								label="MOD_ACTIVATE_SLIDESHOWS_PARAMS_ENABLE_ARROWS_NAVIGATION_LABEL"
+								description="MOD_ACTIVATE_SLIDESHOWS_PARAMS_ENABLE_ARROWS_NAVIGATION_DESC">
+									<option value="1">JENABLED</option>
+									<option value="0">JDISABLED</option>
+							</field>	
+														
+							<field
+								name="jquery"
+								type="list"
+								default="1"
+								label="MOD_ACTIVATE_SLIDESHOWS_PARAMS_JQUERY_LABEL"
+								description="MOD_ACTIVATE_SLIDESHOWS_PARAMS_JQUERY_DESC">
+									<option value="1">JYES</option>
+									<option value="0">JNO</option>
+							</field>							
+			</fieldset>
+			
+			<fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="MOD_ACTIVATE_SLIDESHOWS_LAYOUT_LABEL"
+					description="MOD_ACTIVATE_SLIDESHOWS_LAYOUT_DESC">
+				</field>
+				
+				<field
+					name="bootstrap_carousel_id"
+					type="text"
+					default="myCarousel"
+					label="MOD_ACTIVATE_SLIDESHOWS_PARAMS_BOOTSTRAP_CAROUSEL_ID_LABEL"
+					description="MOD_ACTIVATE_SLIDESHOWS_PARAMS_BOOTSTRAP_CAROUSEL_ID_DESC">
+				</field>
+				
+				<field
+					name="bootstrap_carousel_thumbs_per_row"
+					type="integer"
+					default="8"
+					first="0"
+					last="12"
+					step="1"
+					label="MOD_ACTIVATE_SLIDESHOWS_PARAMS_BOOTSTRAP_CAROUSEL_THUMBS_PER_ROW_LABEL"
+					description="MOD_ACTIVATE_SLIDESHOWS_PARAMS_BOOTSTRAP_CAROUSEL_THUMBS_PER_ROW_DESC">
+				</field>
+				<field
+					name="bootstrap_carousel_rows_of_thumbs"
+					type="integer"
+					default="2"
+					first="0"
+					last="4"
+					step="1"
+					label="MOD_ACTIVATE_SLIDESHOWS_PARAMS_BOOTSTRAP_CAROUSEL_ROWS_OF_THUMBS_LABEL"
+					description="MOD_ACTIVATE_SLIDESHOWS_PARAMS_BOOTSTRAP_CAROUSEL_ROWS_OF_HUMBS_DESC">
+				</field>				
+			</fieldset>
+		</fields>    
+    </config>
+    
+</extension>

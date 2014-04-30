@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+	<extension type="package" version="3.0">
+	<name>Activate Slideshows Package</name>
+	<author>Activate Media</author>
+	<creationDate>March 2014</creationDate>
+	<packagename>pkg_activate_slideshows</packagename>
+	<version>1.0.0</version>
+	<url>http://www.activatemedia.co.uk/</url>
+	<packager>Activate Media</packager>
+	<packagerurl>http://www.activatemedia.co.uk/</packagerurl>
+	<description>Flexible Bootstrap based slideshows extension</description>
+	<files folder="packages">
+		<file type="component" id="di">com_di_2.zip</file>
+		<file type="component" id="activate_slideshows" >com_activate_slideshows.zip</file>
+		<file type="module" id="mod_activate_slideshows" client="site">mod_activate_slideshows.zip</file>	   
+	</files>
+</extension>
