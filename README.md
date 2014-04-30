@@ -12,7 +12,7 @@ ActivateSlideshows
 </ul>
 <h3>Installation</h3>
 <ol>
-	<li> Download the latest stable release (https://github.com/ActivateMedia/ActivateSlideshows/blob/master/releases/pkg_activate_slideshows-latest.stable-1.0.0.zip).</li>
+	<li> Download the latest stable release (https://github.com/ActivateMedia/ActivateSlideshows/releases/download/1.0.0/pkg_activate_slideshows.zip).</li>
 	<li>Upload and install it on your Joomla! platform.</li>
 </ol>
 <h3>Usage</h3>
