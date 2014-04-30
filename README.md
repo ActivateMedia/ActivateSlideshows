@@ -1,7 +1,7 @@
 ActivateSlideshows
 ==================
 
-<h2>A Joomla! extension comprising a component and a module to create and display multiple slideshows.</h2>
+<h3>A Joomla! extension comprising a component and a module to create and display multiple slideshows.</h3>
 <h3>Installation</h3>
 <ol>
 	<li> Download the latest stable release (https://github.com/ActivateMedia/ActivateSlideshows/blob/master/releases/pkg_activate_slideshows-latest.stable-1.0.0.zip).</li>
