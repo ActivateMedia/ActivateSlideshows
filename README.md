@@ -17,7 +17,6 @@ ActivateSlideshows
 <ol>
 	<li>In you Joomla! backend, go in Extensions / Module Manager.</li>
 	<li>Create a new instance of the 'Activate Slideshows' module.</li>
-</ol>
 <p>There are different layouts for the frontend module:</p>
 <ul>
 	<li><strong>Simple Bootstrap 3 carousel</strong> - with following features: linkable slide, slide effect, auto start, auto cycle, time interval, pause on hover, enable caption, enable dots nav, enable arrows controls</li>
@@ -25,4 +24,10 @@ ActivateSlideshows
 	<li><strong>Showcase</strong> - displays a grid of images (eg. logos) you can choose number of rows and columns.</li>
 	<li><strong>Slideshows gallery</strong> - it's a slideshow of slideshows, it's a bootstrap carousel with the featured image of the slideshow, its title and description. Clicking the slideshow you will reach the page with only the selected slideshow.</li>
 	<li><strong>More slideshows</strong> - displays a section with all the slideshows, it comes with an AJAX loading effect 'Load more'.</li>
+	<br/>
 </ul>
+	<li>Select the layout you need in <strong>Advanced</strong> &gt; <em><strong>Layout</strong></em></li>
+	<li>Select the <strong>slideshow</strong> (or multiple slideshows if you are using the 'slideshow-gallery' layout) in <strong>Module</strong> &gt; <em><strong>Slideshows</strong></em></li>
+	<li>Choose you desidered <strong>settings</strong> for the carousel (slide, time, pause on hover, etc)</li>
+	<li>Set the module <strong>position</strong>, status <strong>published</strong> and <strong>Save</strong></li>
+</ol>
