@@ -2,6 +2,14 @@ ActivateSlideshows
 ==================
 
 <h3>A Joomla! extension comprising a component and a module to create and display multiple slideshows.</h3>
+<h3>Demos</h3>
+<ul>
+	<li><strong><a href="http://cocoa.activatemedia.com/en/">Simple Bootstrap 3 carousel</a></strong></li>
+	<li><strong><a href="http://cocoa.activatemedia.com/en/picture-gallery">Bootstrap 3 carousel with thumbnails navigation</a></strong></li>
+	<li><strong><a href="http://cocoa.activatemedia.com/en/">Showcase</a></strong> (logos at the bottom)</li>
+	<li><strong><a href="http://cocoa.activatemedia.com/en/">Slideshows gallery</a></strong> (Picture gallery box)</li>
+	<li><strong><a href="http://cocoa.activatemedia.com/en/picture-gallery">More slideshows</a></strong> (load more section)</li>
+</ul>
 <h3>Installation</h3>
 <ol>
 	<li> Download the latest stable release (https://github.com/ActivateMedia/ActivateSlideshows/blob/master/releases/pkg_activate_slideshows-latest.stable-1.0.0.zip).</li>
@@ -33,12 +41,3 @@ ActivateSlideshows
 	<li>Choose you desidered <strong>settings</strong> for the carousel (slide, time, pause on hover, etc)</li>
 	<li>Set the module <strong>position</strong>, status <strong>published</strong> and <strong>Save</strong></li>
 </ol>
-<h3>Demos</h3>
-<ul>
-	<li><strong><a href="http://cocoa.activatemedia.com/en/">Simple Bootstrap 3 carousel</a></strong></li>
-	<li><strong><a href="http://cocoa.activatemedia.com/en/picture-gallery">Bootstrap 3 carousel with thumbnails navigation</a></strong></li>
-	<li><strong><a href="http://cocoa.activatemedia.com/en/">Showcase</a></strong> (logos at the bottom)</li>
-	<li><strong><a href="http://cocoa.activatemedia.com/en/">Slideshows gallery</a></strong> (Picture gallery box)</li>
-	<li><strong><a href="http://cocoa.activatemedia.com/en/picture-gallery">More slideshows</a></strong> (load more section)</li>
-</ul>
-<p>&nbsp;</p>
