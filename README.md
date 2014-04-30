@@ -33,3 +33,12 @@ ActivateSlideshows
 	<li>Choose you desidered <strong>settings</strong> for the carousel (slide, time, pause on hover, etc)</li>
 	<li>Set the module <strong>position</strong>, status <strong>published</strong> and <strong>Save</strong></li>
 </ol>
+<h3>Demos</h3>
+<ul>
+	<li><strong><a href="http://cocoa.activatemedia.com/en/">Simple Bootstrap 3 carousel</a></strong></li>
+	<li><strong><a href="http://cocoa.activatemedia.com/en/picture-gallery">Bootstrap 3 carousel with thumbnails navigation</a></strong></li>
+	<li><strong><a href="http://cocoa.activatemedia.com/en/">Showcase</a></strong> (logos at the bottom)</li>
+	<li><strong><a href="http://cocoa.activatemedia.com/en/">Slideshows gallery</a></strong> (Picture gallery box)</li>
+	<li><strong><a href="http://cocoa.activatemedia.com/en/picture-gallery">More slideshows</a></strong> (load more section)</li>
+</ul>
+<p>&nbsp;</p>
